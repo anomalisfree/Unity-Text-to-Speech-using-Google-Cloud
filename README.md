@@ -10,7 +10,7 @@ The code is designed to convert text to voice using Google Cloud.
 ###
 
 #### To convert text to an audio clip, use the method:
-### `GetSpeechAudioFromGoogle(string textToConvert, VoiceScriptableObject voice, Action<AudioClip> audioClipReceived,  Action<BadRequestData> errorReceived)`
+`GetSpeechAudioFromGoogle(string textToConvert, VoiceScriptableObject voice, Action<AudioClip> audioClipReceived,  Action<BadRequestData> errorReceived)`
 from TextToSpeech class
 
 `string textToConvert - text to convert`
