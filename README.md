@@ -1,13 +1,13 @@
 # Unity-Text-to-Speech-using-Google-Cloud
 
 The code is designed to convert text to voice using Google Cloud.
-###
+
+----
 
 ### For the code to work, you need to enter the api key in the "TEXT_TO_SPEECH" prefab.
 #### An example of usage can be found in `GoogleTextToSpeech\Scenes\Example` scene.
 
-###
-###
+----
 
 #### To convert text to an audio clip, use the method:
 `GetSpeechAudioFromGoogle(string textToConvert, VoiceScriptableObject voice, Action<AudioClip> audioClipReceived,  Action<BadRequestData> errorReceived)`
@@ -21,8 +21,7 @@ from TextToSpeech class
 
 `Action<BadRequestData> errorReceived - executed in case of an error`
 
-###
-###
+----
 
 You can find ready-made voice options in `GoogleTextToSpeech\Voices`.
 
