@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using GoogleTextToSpeech.Scripts.Data;
-using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.Networking;
 
@@ -18,7 +17,7 @@ namespace GoogleTextToSpeech.Scripts
             headers.Add("X-Goog-Api-Key", apiKey);
             headers.Add("Content-Type", "application/json; charset=utf-8");
             
-            Post(url, JsonConvert.SerializeObject(dataToSend), requestReceived,  errorReceived, headers);
+            Post(url, JsonUtility.ToJson(dataToSend), requestReceived,  errorReceived, headers);
         }
         
         private static async void Post(string url, string bodyJsonString, Action<string> requestReceived,
